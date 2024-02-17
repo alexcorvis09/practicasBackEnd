@@ -6,7 +6,7 @@ let persona1 = {
    nombre:'Alex',
    ciudad:'CDMX',
    edad:'31',
-   cumpleaños: 12.14
+   cumpleaños: '12.14'
 }
 const displayProperty = (obj, x) =>{
     property= obj[x]
@@ -32,7 +32,7 @@ addProperty(person2['edad'] = '35')
 console.log(`La persona 2 se llama ${person2.nombre} y tiene ${person2.edad} años`)
 
 // //Define dos objetos JSON que regresen información sobre productos (nombre, precio, cantidad)
-// //Escribe una función que tome estos dos ojetos como parámetro y compare sus propiedades
+// //Escribe una función que tome estos dos objetos como parámetro y compare sus propiedades
 // //para determinar si son iguales o no. 
 
 let producto1 = {

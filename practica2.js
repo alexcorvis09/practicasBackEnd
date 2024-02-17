@@ -5,9 +5,14 @@ const perimeterT =(a,b) =>{
 
 perimeterT(2, 3)
 
-
-const primeNum = (num) =>{
-    for(i=0;i<num;i++){
-        
+const primeNum = (number) =>{
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0 || number === 1) {
+         console.log("No es primo")
+         break
+        }
+     else {console.log("Es primo")}
     }
 }
+
+primeNum(7)
