@@ -21,7 +21,7 @@ displayProperty(persona1, ['nombre'])
 let person2 ={
 }
 
-const addProperty = (obj, property, value) =>{
+const addProperty = (obj, property) =>{
     obj[property]='value'
     return obj
 }
@@ -35,15 +35,26 @@ console.log(`La persona 2 se llama ${person2.nombre} y tiene ${person2.edad} añ
 // //Escribe una función que tome estos dos ojetos como parámetro y compare sus propiedades
 // //para determinar si son iguales o no. 
 
-// let producto1 = {
-//     nombre:'Mayonesa McCormick',
-//     precio:'$79',
-//     cantidad:'870g'
-// }
+let producto1 = {
+    nombre:'Mayonesa McCormick',
+    precio:'$79',
+    cantidad:'870g'
+}
 
-// let producto2 = {
-//     nombre:'Mayonesa Hellmans',
-//     precio:'$92',
-//     cantidad:'800g',
-//     perdonoAPedrito:'sí'
-// }
+let producto2 = {
+    nombre:'Mayonesa Hellmans',
+    precio:'$92',
+    cantidad:'800g',
+    perdonoAPedrito:'sí'
+}
+
+const comparingObjs = (obj1, obj2) =>{
+    let keys1 = Object.keys(obj1)
+    let keys2 = Object.keys(obj2)
+    if (keys1.length !== keys2.length) {
+        console.log("son diferentes")
+    } else{
+    console.log("Son iguales")}
+}
+
+comparingObjs(producto1, producto2)
